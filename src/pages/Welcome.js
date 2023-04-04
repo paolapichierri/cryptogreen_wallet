@@ -1,3 +1,5 @@
+import Button from '@atoms/Button';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 function App() {
@@ -8,13 +10,9 @@ function App() {
             <h1 className='text-5xl	font-semibold text-primary mt-5'>Crypto<span className='text-accent'>G</span>reen</h1>
           </header>
           <div className='mx-auto mt-20'>
-            <button className='w-48 '>
-              <a href='' className='w-full bg-accent shadow-xl fill-white flex justify-center items-center py-3 rounded-3xl'>
-                <p className='text-2xl text-white font-bold tracking-wide uppercase'>Login</p>
-              </a>
-            </button>
+            <Button>Log in</Button>
           </div>
-          <a href='' className='text-center mt-4 uppercase font-bold text-xl text-primary'>Sign up</a>
+          <Link to='/register/access-data' className='text-center mt-4 uppercase font-bold text-xl text-primary'>Sign up</Link>
         </div>
   );
 }
