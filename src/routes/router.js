@@ -6,6 +6,9 @@ import Welcome from '@pages/Welcome';
 import RegisterAccessData from '@pages/Register/AccessData'
 import RegisterUserData from '@pages/Register/UserData'
 import RegisterUploadDocuments from '@pages/Register/UploadDocuments'
+//Login
+import Login from "@pages/Login/Login";
+import OTP from "@pages/Login/OTP";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +31,20 @@ const router = createBrowserRouter([
                 path: '/register/upload-documents', 
                 element: <RegisterUploadDocuments/>
             },
+        ]
+    },
+    {
+        path: '/login',
+        element: <Root/>,
+        children: [
+            {
+                path: '/login',
+                element: <Login/>
+            },
+            {
+                path: '/login/otp',
+                element: <OTP/>
+            }
         ]
     }
 ]);

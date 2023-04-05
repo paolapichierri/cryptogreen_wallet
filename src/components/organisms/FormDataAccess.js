@@ -4,7 +4,7 @@ import FormInput from '@molecules/FormInput';
 
 export default function FormDataAccess(){
     return (
-        <form className='flex flex-col justify-between gap-5 mt-6   '>
+        <form className='flex flex-col justify-between gap-5 mt-5'>
             <div className='flex flex-col justify-between gap-5'>
             
             <FormInput

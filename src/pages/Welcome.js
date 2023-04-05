@@ -10,7 +10,7 @@ function App() {
             <h1 className='text-5xl	font-semibold text-primary mt-5'>Crypto<span className='text-accent'>G</span>reen</h1>
           </header>
           <div className='mx-auto mt-20'>
-            <Button>Log in</Button>
+            <Button to="/login">Log in</Button>
           </div>
           <Link to='/register/access-data' className='text-center mt-4 uppercase font-bold text-xl text-primary'>Sign up</Link>
         </div>
