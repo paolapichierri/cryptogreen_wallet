@@ -9,6 +9,8 @@ import RegisterUploadDocuments from '@pages/Register/UploadDocuments'
 //Login
 import Login from "@pages/Login/Login";
 import OTP from "@pages/Login/OTP";
+//Wallet
+import Wallet from "@pages/Wallet/Home";
 
 const router = createBrowserRouter([
     {
@@ -44,6 +46,16 @@ const router = createBrowserRouter([
             {
                 path: '/login/otp',
                 element: <OTP/>
+            }
+        ]
+    },
+    {
+        path: '/wallet',
+        element: <Root/>,
+        children: [
+            {
+                path: '/wallet',
+                element: <Wallet/>
             }
         ]
     }
