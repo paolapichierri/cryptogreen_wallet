@@ -4,6 +4,7 @@ import IconButton from "@atoms/IconButton";
 import TextLg from "@atoms/TextLg";
 import DashboardCard from "@atoms/DashboardCard";
 import Transaction from "@molecules/Transaction";
+import MainHeader from "@organisms/MainHeader";
 import MainLayout from "../../layouts/MainLayout";
 
 export default function Home(){
@@ -14,7 +15,8 @@ export default function Home(){
     ]
 
     return (
-        <MainLayout>
+        <MainLayout header={<MainHeader title="Wallet" subtitle="Welcome, Paola"/>}>
+            
             <DashboardCard
                 title='1.234'
                 subtitle='0.0000036'
