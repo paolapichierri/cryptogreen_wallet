@@ -4,7 +4,8 @@ export default function Button({children , type = 'accent' , to = "#"}){
     const styles = {
         primary: 'bg-primary',
         accent: 'bg-accent',
-        secondary: 'bg-secondary'
+        secondary: 'bg-secondary',
+        white: 'bg-white-dark',
     }
 
     return (
