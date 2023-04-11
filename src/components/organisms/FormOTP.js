@@ -6,7 +6,7 @@ import { createRef } from "react";
 export default function FormOTP(){
 
     function nextInput(index){
-        console.log(inputRefs[index + 1].current.focus());
+        inputRefs[index + 1].current.focus();
     }
 
     // let inputRefs = [createRef(), createRef(), createRef(),createRef(), createRef(), createRef() ]

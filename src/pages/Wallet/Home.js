@@ -39,7 +39,7 @@ export default function Home(){
                 })
             }
              
-            <div className="flex justify-evenly p-10">
+            <div className="flex justify-evenly mt-10">
                 
                 <IconButton 
                     to="/wallet/send" 

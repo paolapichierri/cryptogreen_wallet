@@ -1,4 +1,4 @@
-export default function ProfileIcon({fill}){
+export default function ProfileIcon(){
     return (
         <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.9818 14.0365C14.8818 14.0265 14.7618 14.0265 14.6518 14.0365C12.2718 13.9565 10.3818 12.0065 10.3818 9.6065C10.3818 7.1565 12.3618 5.1665 14.8218 5.1665C17.2718 5.1665 19.2618 7.1565 19.2618 9.6065C19.2518 12.0065 17.3618 13.9565 14.9818 14.0365Z" stroke="#F3F3F3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
