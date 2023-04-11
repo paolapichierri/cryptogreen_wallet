@@ -6,6 +6,7 @@ import DashboardCard from "@atoms/DashboardCard";
 import Transaction from "@molecules/Transaction";
 import MainHeader from "@organisms/MainHeader";
 import MainLayout from "../../layouts/MainLayout";
+import { Link } from "react-router-dom";
 
 export default function Home(){
 
@@ -24,9 +25,9 @@ export default function Home(){
                 
             <div className="flex justify-around mt-10 font-bold">
                 <TextLg className="text-primary">Last Transactions</TextLg>
-                <TextLg className="text-accent underline decoration-2">View All</TextLg>
+                <Link to="/wallet/movements" className="text-accent underline decoration-2">View All</Link>
             </div>
-
+            
             {
                 transactions.map((transaction, index) => {
                     return <Transaction 

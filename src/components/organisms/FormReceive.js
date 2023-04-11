@@ -4,7 +4,7 @@ import FormInput from "@molecules/FormInput";
 export default function FormReceive(){
     return (
         <form className="flex flex-col items-center py-4">
-            <img className="mb-6 w-72" src="/media/qrcode.png" alt="" />
+            <img className="mb-6 w-72" src="/media/qrcode.png" alt="qr code" />
             <FormInput
                 id='walletAddress'
                 text='Wallet Address'
