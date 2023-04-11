@@ -14,6 +14,9 @@ import Wallet from "@pages/Wallet/Home";
 import WalletSend from "@pages/Wallet/Send";
 import WalletReceive from "@pages/Wallet/Receive";
 import WalletMovements from "@pages/Wallet/Movements";
+//Market
+import Market from "@pages/Market/Home";
+import MarketBuy from "@pages/Market/Buy";
 
 const router = createBrowserRouter([
     {
@@ -71,6 +74,20 @@ const router = createBrowserRouter([
             {
                 path: '/wallet/movements',
                 element: <WalletMovements/>
+            }
+        ]
+    },
+    {
+        path: '/market',
+        element: <Root/>,
+        children: [
+            {
+                path: '/market',
+                element: <Market/>,
+            },
+            {
+                path: '/market/buy',
+                element: <MarketBuy/>
             }
         ]
     }

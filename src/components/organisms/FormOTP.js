@@ -6,7 +6,9 @@ import { createRef } from "react";
 export default function FormOTP(){
 
     function nextInput(index){
-        inputRefs[index + 1].current.focus();
+        if(index < (inputRefs.length - 1)){
+            inputRefs[index + 1].current.focus();
+        }
     }
 
     // let inputRefs = [createRef(), createRef(), createRef(),createRef(), createRef(), createRef() ]
@@ -29,12 +31,21 @@ export default function FormOTP(){
                 <InputOTP/>
                 <InputOTP/>
             </div> */}
-            <div className="flex justify-evenly mt-5">
-           
-                {inputRefs.map((inputRef, i) => {
-                    return <InputOTP key={i} inputRef={inputRef} inputIndex={i} handleChange={nextInput}/>
-                })}
-            </div>
+
+                <div className="flex justify-evenly mt-5">
+
+                    {inputRefs.map((inputRef, i) => {
+                        return (
+                            <InputOTP 
+                                key={i}
+                                inputRef={inputRef} 
+                                inputIndex={i} 
+                                handleChange={nextInput}
+                            />
+                        )
+                    })}
+                    
+                </div>
             <div>
                 <TextLg className='text-secondary font-bold text-center mt-5'>
                 Invia nuovo codice : <span className="font-medium">00:20</span> 

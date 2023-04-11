@@ -5,7 +5,7 @@ import TextLg from "@atoms/TextLg";
 import DashboardCard from "@atoms/DashboardCard";
 import Transaction from "@molecules/Transaction";
 import MainHeader from "@organisms/MainHeader";
-import MainLayout from "../../layouts/MainLayout";
+import MainLayout from "@layouts/MainLayout";
 import { Link } from "react-router-dom";
 
 export default function Home(){
@@ -16,7 +16,7 @@ export default function Home(){
     ]
 
     return (
-        <MainLayout header={<MainHeader title="Wallet" subtitle="Welcome, Paola"/>}>
+        <MainLayout header={<MainHeader title="Wallet" subtitle={<span>Welcome, <span className="font-bold">Paola</span></span>}/>}>
             
             <DashboardCard
                 title='1.234'
