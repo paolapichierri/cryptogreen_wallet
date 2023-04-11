@@ -1,4 +1,4 @@
-export default function SendIcon({fill}){
+export default function SendIcon(){
     return (
         <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12.0049 16.0414C12.0049 17.1731 12.8799 18.0831 13.9532 18.0831H16.1465C17.0799 18.0831 17.8382 17.2898 17.8382 16.2981C17.8382 15.2364 17.3716 14.8515 16.6832 14.6065L13.1715 13.3814C12.4832 13.1364 12.0166 12.7631 12.0166 11.6898C12.0166 10.7098 12.7749 9.90479 13.7082 9.90479H15.9015C16.9749 9.90479 17.8499 10.8148 17.8499 11.9465" stroke="#29CC7A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

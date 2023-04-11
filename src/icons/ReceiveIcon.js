@@ -1,4 +1,4 @@
-export default function ReceiveIcon({fill}){
+export default function ReceiveIcon(){
     return (
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.33366 13.9998C2.33366 7.55983 7.56033 2.33317 14.0003 2.33317C20.4403 2.33317 25.667 7.55984 25.667 13.9998C25.667 20.4398 20.4403 25.6665 14.0003 25.6665" stroke="#29CC7A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

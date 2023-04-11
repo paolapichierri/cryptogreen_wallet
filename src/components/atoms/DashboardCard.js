@@ -1,7 +1,7 @@
 export default function DashboardCard({title, subtitle}){
     return (
         
-            <div className="relative mb-12 mt-16">
+            <div className="relative mb-12 mt-16 inline-block">
                 <img className="absolute right-0 translate-y-[-70%]" src="/media/grass.png" alt="grass image" />
                 <div className="min-h-[130px] w-80 bg-accent relative rounded-[40px] p-6 text-white mx-auto shadow-md">
                     <h2 className="text-5xl font-bold">{title} <span className="text-3xl font-medium">USD</span> </h2>

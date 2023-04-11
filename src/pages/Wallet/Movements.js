@@ -15,7 +15,6 @@ export default function WalletMovements(){
         {type: 'Sent' , date: '05/04/2022', amount: '540.00', conversion: '0,018'},
         {type: 'Sent' , date: '12/09/2021', amount: '1200.00', conversion: '0,040'},
         {type: 'Received' , date: '06/06/2021', amount: '200.00', conversion: '0,0067'},
-
     ]
 
     return (
@@ -35,7 +34,6 @@ export default function WalletMovements(){
                             date={transaction.date}
                             amount={transaction.amount}
                             conversion={transaction.conversion}
-
                         />
                     })
                 }
