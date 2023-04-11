@@ -11,7 +11,8 @@ import Login from "@pages/Login/Login";
 import OTP from "@pages/Login/OTP";
 //Wallet
 import Wallet from "@pages/Wallet/Home";
-import WalletSend from "@pages/Wallet/Send"
+import WalletSend from "@pages/Wallet/Send";
+import WalletReceive from "@pages/Wallet/Receive";
 
 const router = createBrowserRouter([
     {
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
             {
                 path: '/wallet/send',
                 element: <WalletSend/>
+            },
+            {
+                path: '/wallet/receive',
+                element: <WalletReceive/>
             }
         ]
     }
