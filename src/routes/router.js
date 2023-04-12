@@ -18,6 +18,10 @@ import WalletMovements from "@pages/Wallet/Movements";
 import Market from "@pages/Market/Home";
 import MarketBuy from "@pages/Market/Buy";
 import MarketSell from "@pages/Market/Sell";
+//Profile
+import Profile from "@pages/Profile/Home";
+import ProfileEditUserData from "@pages/Profile/EditUserData";
+import ProfileEditPassword from "@pages/Profile/EditPassword";
 
 const router = createBrowserRouter([
     {
@@ -93,6 +97,24 @@ const router = createBrowserRouter([
             {
                 path: '/market/sell',
                 element: <MarketSell/>
+            }
+        ]
+    },
+    {
+        path: '/profile',
+        element: <Root/>,
+        children: [
+            {
+                path: '/profile',
+                element: <Profile/>,
+            },
+            {
+                path: '/profile/edit-user-data',
+                element: <ProfileEditUserData/>,
+            },
+            {
+                path: '/profile/edit-password',
+                element: <ProfileEditPassword/>,
             }
         ]
     }
