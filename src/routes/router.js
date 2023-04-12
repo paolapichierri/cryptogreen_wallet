@@ -17,6 +17,7 @@ import WalletMovements from "@pages/Wallet/Movements";
 //Market
 import Market from "@pages/Market/Home";
 import MarketBuy from "@pages/Market/Buy";
+import MarketSell from "@pages/Market/Sell";
 
 const router = createBrowserRouter([
     {
@@ -88,6 +89,10 @@ const router = createBrowserRouter([
             {
                 path: '/market/buy',
                 element: <MarketBuy/>
+            },
+            {
+                path: '/market/sell',
+                element: <MarketSell/>
             }
         ]
     }

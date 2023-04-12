@@ -8,7 +8,7 @@ import MainLayout from "@layouts/MainLayout";
 
 export default function Home(){
     return (
-        <MainLayout header={<MainHeader title="Wallet" subtitle={<span>Welcome, <span className="font-bold">Paola</span></span>}/>}>
+        <MainLayout header={<MainHeader title="Market" subtitle={<span>Welcome, <span className="font-bold">Paola</span></span>}/>}>
 
             <DashboardCard
                 title='1.234'
@@ -31,13 +31,13 @@ export default function Home(){
                 <IconButton 
                     to="/market/buy" 
                     text="Buy" 
-                    // icon={<SendIcon/>}
+                    icon={<SendIcon/>}
                 />
 
                 <IconButton 
                     to="/market/sell" 
                     text="Sell" 
-                    // icon={<ReceiveIcon/>}
+                    icon={<ReceiveIcon/>}
                 />
             </div>   
 

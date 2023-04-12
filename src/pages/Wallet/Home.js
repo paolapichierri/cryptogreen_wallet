@@ -13,6 +13,7 @@ export default function Home(){
     const transactions = [
         {type: 'Sent' , date: '02/12/2023', amount: '2.322.00', conversion: '0.00009752'},
         {type: 'Received' , date: '01/02/2023', amount: '1.212.00', conversion: '0.0000509'},
+        {type: 'Received' , date: '03/02/2023', amount: '192.00', conversion: '0,0064'},
     ]
 
     return (
@@ -40,7 +41,7 @@ export default function Home(){
                 })
             }
              
-            <div className="flex justify-evenly mt-10">
+            <div className="flex justify-evenly mt-5">
                 
                 <IconButton 
                     to="/wallet/send" 

@@ -9,7 +9,7 @@ export default function Transaction({type, date, amount, conversion}){
 
     return (
         <div className="flex justify-around items-center">
-            <div className="flex items-center my-5 mr-5">
+            <div className="flex items-center my-4 mr-5">
                 {type === 'Sent' ? <ArrowUp fill="fill-red-500"/> : <ArrowDown fill="fill-accent"/>}
                 
                 <div className="ml-2">
