@@ -1,4 +1,4 @@
-export default function Input({id, placeholder, type = "text", value = ""}){
+export default function Input({id, placeholder, type = "text", value = "", onInput = () => {}, disabled = false}){
     return (
         <input 
             id={id}
@@ -7,6 +7,8 @@ export default function Input({id, placeholder, type = "text", value = ""}){
             type={type}
             defaultValue={value}
             className='rounded-2xl px-3 py-2 mt-2 border border-slate-300 shadow'
+            onInput={onInput}
+            disabled={disabled}
         />
     )
 }
